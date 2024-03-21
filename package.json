@@ -1,0 +1,16 @@
+{
+  "name": "internship",
+  "version": "1.0.0",
+  "description": "node js completition",
+  "main": "app1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app1.js",
+    "start-server": "node app1.js"
+  },
+  "author": "Rahul Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}

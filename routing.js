@@ -1,7 +1,7 @@
-const http = require('http');
+
 const fs =  require('fs');
 // Create a server
-const server = http.createServer((req, res) => {
+const requestHandler =(req, res) => {
     // Parse the URL
     const url = req.url;
     const method = req.method;
@@ -49,10 +49,6 @@ const server = http.createServer((req, res) => {
     res.write('<body><h1>Hello from NodeJs</h1></body>');
     res.write('</html>');
     res.end();
-});
+};
 
-// Set the port and start the server
-const PORT = 3000;
-server.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+module.exports = requestHandler;
